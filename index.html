@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Сетка — Мой дашборд</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="js/state.js"></script>
+    <script defer src="js/ui.js"></script>
+    <script defer src="js/drag.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap nav">
+        <div class="brand">
+          <span class="logo" aria-hidden="true"
+            ><i></i><i></i><i></i><i></i></span
+          >Сетка
+        </div>
+        <div class="navright">
+          <button id="theme" class="theme"></button
+          ><span class="avatar" aria-label="Личное пространство">Я</span>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">
+            <span aria-hidden="true">✳</span> ЛИЧНОЕ ПРОСТРАНСТВО
+          </div>
+          <h1>Мой дашборд<span>.</span></h1>
+          <p>Заметки, задачи и цифры в одном месте.</p>
+        </div>
+        <div class="art" aria-hidden="true">
+          <div class="paper back"></div>
+          <div class="paper front">
+            <div class="windowbar">● ● ●</div>
+            <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <b class="spark">✳</b><span class="cursor">➤</span>
+        </div>
+      </section>
+      <section aria-labelledby="widgets-title">
+        <div class="toolbar">
+          <div class="section-title">
+            <h2 id="widgets-title">Мои виджеты</h2>
+            <output id="count" aria-label="Количество виджетов"></output>
+          </div>
+          <div class="actions">
+            <button id="reset"></button
+            ><button id="add" class="primary"></button>
+          </div>
+        </div>
+        <div id="grid"></div>
+      </section>
+    </main>
+    <dialog id="dialog" aria-labelledby="dialog-title">
+      <div class="dialog-head">
+        <h2 id="dialog-title"></h2>
+        <button id="close" aria-label="Закрыть">×</button>
+      </div>
+      <div id="dialog-content"></div>
+    </dialog>
+    <div id="toast" role="status"></div>
+  </body>
+</html>

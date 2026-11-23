@@ -14,35 +14,30 @@
     <header class="top">
       <div class="wrap nav">
         <div class="brand">
-          <span class="logo" aria-hidden="true"
-            ><i></i><i></i><i></i><i></i></span
-          >Сетка
+          <span class="mark" aria-hidden="true"></span>Сетка
         </div>
-        <div class="navright">
-          <button id="theme" class="theme"></button
-          ><span class="avatar" aria-label="Личное пространство">Я</span>
-        </div>
+        <a class="board-link" href="#widgets-title">Мои виджеты</a>
+        <button id="theme" class="theme"></button>
       </div>
     </header>
-    <main class="wrap">
-      <section class="hero">
-        <div>
-          <div class="eyebrow">
-            <span aria-hidden="true">✳</span> ЛИЧНОЕ ПРОСТРАНСТВО
+    <main>
+      <section class="hero" aria-labelledby="board-title">
+        <div class="wrap hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Личное пространство</p>
+            <h1 id="board-title">Мой дашборд</h1>
+            <p class="intro">Заметки, задачи и цифры в одном месте.</p>
           </div>
-          <h1>Мой дашборд<span>.</span></h1>
-          <p>Заметки, задачи и цифры в одном месте.</p>
-        </div>
-        <div class="art" aria-hidden="true">
-          <div class="paper back"></div>
-          <div class="paper front">
-            <div class="windowbar">● ● ●</div>
-            <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
-          </div>
-          <b class="spark">✳</b><span class="cursor">➤</span>
+          <img
+            class="orbit"
+            src="assets/orbit.svg"
+            alt=""
+            width="560"
+            height="340"
+          />
         </div>
       </section>
-      <section aria-labelledby="widgets-title">
+      <section class="wrap workspace" aria-labelledby="widgets-title">
         <div class="toolbar">
           <div class="section-title">
             <h2 id="widgets-title">Мои виджеты</h2>
